@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplicación de Prueba de RushORM"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserción Masiva de Elementos"
+            android:id="@+id/insercionElementos"
+            android:layout_weight="1"
+            android:onClick="insertElements" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulta Masiva de Elementos"
+            android:id="@+id/consultaElementos"
+            android:layout_weight="1"
+            android:onClick="massiveQuery" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulta con identificador"
+            android:id="@+id/consultaConIdentificador"
+            android:layout_weight="1"
+            android:onClick="idQuery" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminación de Elementos con Identificador"
+            android:id="@+id/eliminacionConIdentificador"
+            android:layout_weight="1"
+            android:onClick="idDelete" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminación Masiva de Elementos"
+            android:id="@+id/eliminacionMasiva"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            android:onClick="massiveDelete" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
